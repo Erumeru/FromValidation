@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FromValidation</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="submit">SUBMIT</string>
+</resources>
