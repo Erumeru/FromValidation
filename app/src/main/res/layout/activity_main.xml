@@ -89,4 +89,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/phoneContainer"/>
+
+    <ImageView
+        android:id="@+id/imageReyClash"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        app:layout_constraintTop_toBottomOf="@id/submitButton"
+        app:layout_constraintStart_toStartOf="@id/submitButton"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/trophy"
+        app:layout_constraintEnd_toEndOf="@id/submitButton"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

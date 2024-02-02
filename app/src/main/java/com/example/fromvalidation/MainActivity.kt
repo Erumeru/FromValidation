@@ -2,6 +2,8 @@ package com.example.fromvalidation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.media.MediaPlayer
+
 import android.util.Patterns
 import androidx.appcompat.app.AlertDialog
 import com.example.fromvalidation.databinding.ActivityMainBinding
@@ -26,11 +28,16 @@ class MainActivity : AppCompatActivity() {
         val validEmail=binding.emailContainer.helperText==null
         val validPass=binding.passwordContainer.helperText==null
         val validPhone=binding.phoneContainer.helperText==null
-
         if(validEmail && validPass && validPhone){
             resetForm()
+            binding.imageReyClash.setBackgroundResource(R.drawable.jiji)
+            val mp=MediaPlayer.create(this,R.raw.jijisound)
+            mp.start()
         }else{
             invalidForm()
+            binding.imageReyClash.setBackgroundResource(R.drawable.sad)
+            val mp=MediaPlayer.create(this,R.raw.sadsound)
+            mp.start()
         }
 
     }
